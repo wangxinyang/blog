@@ -4,6 +4,7 @@ pub mod error_template;
 pub mod fileserv;
 
 pub mod components;
+pub mod content;
 pub mod pages;
 
 #[cfg(feature = "hydrate")]

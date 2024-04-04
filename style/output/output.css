@@ -1185,6 +1185,10 @@ video {
   border-width: 0;
 }
 
+.static {
+  position: static;
+}
+
 .relative {
   position: relative;
 }
