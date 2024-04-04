@@ -1,6 +1,6 @@
 use leptos::*;
 
 #[component]
-pub fn PostPage() -> impl IntoView {
+pub fn Post() -> impl IntoView {
     view! { <p>Post</p> }
 }

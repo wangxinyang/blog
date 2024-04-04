@@ -8,8 +8,9 @@ pub fn About() -> impl IntoView {
             <h1 class="mt-2 py-20 text-center text-white text-3xl font-bold tracking-tight sm:text-4xl">
                 "About"
             </h1>
-            <PostContent content=include_str!("../../content/about.md").to_string()/>
+            <main>
+                <PostContent content=include_str!("../../content/about.md").to_string()/>
+            </main>
         </div>
     }
 }
-

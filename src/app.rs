@@ -7,7 +7,7 @@ use crate::components::footer::Footer;
 use crate::components::header::Header;
 use crate::pages::about::About;
 use crate::pages::home::Home;
-use crate::pages::post::PostPage;
+use crate::pages::post::Post;
 
 #[component]
 pub fn App() -> impl IntoView {
@@ -32,7 +32,7 @@ pub fn App() -> impl IntoView {
                 <Routes>
                     <Route path="" view=Home/>
                     <Route path="/about" view=About/>
-                    <Route path="/posts" view=PostPage/>
+                    <Route path="/posts" view=Post/>
                 </Routes>
             </Router>
         </div>
