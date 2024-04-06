@@ -2,7 +2,7 @@ use leptos::*;
 
 #[component]
 pub fn Header() -> impl IntoView {
-    let nav_items = [("About", "/about"), ("Posts", "/posts"), ("Tags", "/tags")];
+    let nav_items = [("About", "/about"), ("Posts", "/posts")];
 
     view! {
         <header class="w-full m-4">
