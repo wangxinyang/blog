@@ -64,8 +64,5 @@ pub fn markdown_to_html(content: String) -> String {
 }
 
 pub fn get_post(id: String) -> Option<PostData> {
-    println!("step into get_post");
-    let post = get_all_posts();
-    println!("post is {:?}", post);
     get_all_posts().get(&id).cloned()
 }

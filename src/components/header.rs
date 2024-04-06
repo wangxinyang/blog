@@ -2,7 +2,7 @@ use leptos::*;
 
 #[component]
 pub fn Header() -> impl IntoView {
-    let nav_items = [("About", "/about"), ("Posts", "/posts")];
+    let nav_items = [("Posts", "/posts"), ("About", "/about")];
 
     view! {
         <header class="w-full m-4">
@@ -22,7 +22,7 @@ pub fn Header() -> impl IntoView {
                         .map(|(name, href)| {
                             view! {
                                 <a
-                                    class="text-sm font-semibold leading-6 text-gray-900"
+                                    class="text-sm font-semibold leading-6 text-stone-100"
                                     href=href.to_string()
                                 >
                                     {name.to_string()}

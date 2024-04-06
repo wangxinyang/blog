@@ -22,7 +22,7 @@ pub fn Posts() -> impl IntoView {
 #[component]
 pub fn Post() -> impl IntoView {
     let params = use_params_map();
-    let id = move || params.with(|params| params.get("id").cloned().unwrap_or_default());
+    let id = || params.with(|params_map| params_map.get("id").cloned().unwrap_or_default());
     let post = get_post(id()).unwrap();
 
     view! {
