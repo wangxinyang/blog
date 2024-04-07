@@ -3,7 +3,14 @@
 This is a my personal blog at <>, written in [Rust](https://www.rust-lang.org)
 using the [Leptos](https://leptos.dev) framework, and styled with [Tailwind CSS](https://tailwindcss.com).
 
-## Creating your template repo
+## List of the features
+
+- Rust
+- Leptos
+- Tailwind Css
+- Tailwind/Typography
+
+## How to run it in your local
 
 If you don't have `cargo-leptos` installed you can install it with
 
@@ -11,26 +18,35 @@ If you don't have `cargo-leptos` installed you can install it with
 cargo install cargo-leptos
 ```
 
-Then run
+Then cd into your project directory
 
 ```bash
-cargo leptos new --git leptos-rs/start-axum
+cd blog
 ```
-
-to generate a new project template.
-
-```bash
-cd my-blog
-```
-
-to go to your newly created project.  
-Feel free to explore the project structure, but the best place to start with your application code is in `src/app.rs`.  
-Addtionally, Cargo.toml may need updating as new versions of the dependencies are released, especially if things are not working after a `cargo update`.
 
 ## Running your project
 
 ```bash
 cargo leptos watch
+```
+
+## Css JIT
+
+To use the Tailwind CSS JIT, you need to add the following to your `package.json` or execute the command below
+
+```bash
+bun run watch
+```
+
+If you have no bun environment, you can install it with
+
+```bash
+# Linux&MacOS
+curl -fsSL https://bun.sh/install | bash
+
+# Windows
+powershell -c "irm bun.sh/install.ps1 | iex"
+
 ```
 
 ## Installing Additional Tools
