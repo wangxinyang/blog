@@ -6,7 +6,9 @@ use leptos::*;
 use crate::content::PostData;
 
 #[component]
-pub fn PostList(posts: HashMap<String, PostData>) -> impl IntoView {
+pub fn PostList(posts_option: Option<HashMap<String, PostData>>) -> impl IntoView {
+    let posts = posts_option.expect("get posts error");
+
     view! {
         <div class="flex flex-col gap-y-10 max-w-2xl mx-auto mt-40">
             {posts
@@ -16,7 +18,6 @@ pub fn PostList(posts: HashMap<String, PostData>) -> impl IntoView {
                     view! { <PostItem id=key.to_string() post=post/> }
                 })
                 .collect_view()}
-
         </div>
     }
 }

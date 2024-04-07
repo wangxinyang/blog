@@ -15,7 +15,7 @@ pub fn Posts() -> impl IntoView {
                 "Posts"
             </h1>
         </div>
-        <PostList posts=get_all_posts()/>
+        <PostList posts_option=get_all_posts()/>
     }
 }
 
