@@ -5,7 +5,7 @@ using the [Leptos](https://leptos.dev) framework, and styled with [Tailwind CSS]
 
 ## Image
 
-![top]()
+![top](https://github.com/wangxinyang/blog/blob/main/captures/top.jpg)
 
 ## List of the features
 
