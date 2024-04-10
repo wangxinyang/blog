@@ -1,6 +1,6 @@
 # [wangxy.com](https://wangxy.fly.dev/)
 
-This is a my personal blog at <>, written in [Rust](https://www.rust-lang.org)
+This is a my personal blog at <[https://wangxy.fly.dev/](https://wangxy.fly.dev/)>, written in [Rust](https://www.rust-lang.org)
 using the [Leptos](https://leptos.dev) framework, and styled with [Tailwind CSS](https://tailwindcss.com).
 
 ## Image
