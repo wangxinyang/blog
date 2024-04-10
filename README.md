@@ -1,4 +1,4 @@
-# [wangxy.com]()
+# [wangxy.com](https://wangxy.fly.dev/)
 
 This is a my personal blog at <>, written in [Rust](https://www.rust-lang.org)
 using the [Leptos](https://leptos.dev) framework, and styled with [Tailwind CSS](https://tailwindcss.com).
