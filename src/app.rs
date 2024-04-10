@@ -15,13 +15,13 @@ pub fn App() -> impl IntoView {
     provide_meta_context();
 
     view! {
-        <Html lang="en" class="bg-red-400 h-full"/>
+        <Html lang="en" class="bg-red-400"/>
         <Stylesheet id="leptos" href="/pkg/my-blog.css"/>
+        <Link rel="shortcut icon" type_="image/png" href="/favicon.ico"/>
 
         // sets the document title
-        <Title text="Tosei's Blog"/>
+        <Title text="Wangxy's Blog"/>
 
-        <Body class="flex flex-col justify-center items-center h-full"/>
         <Header/>
         <div class="flex-1">
             <Router fallback=|| {

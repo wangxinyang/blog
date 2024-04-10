@@ -5,7 +5,7 @@ pub fn Header() -> impl IntoView {
     let nav_items = [("Posts", "/posts"), ("About", "/about")];
 
     view! {
-        <header class="w-full m-4">
+        <header class="p-6 h-[70px]">
             <div class="flex justify-evenly items-center">
                 <a href="/">
                     <span class="sr-only">"Wang xinyang"</span>

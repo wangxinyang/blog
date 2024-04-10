@@ -11,7 +11,7 @@ use crate::{
 pub fn Posts() -> impl IntoView {
     view! {
         <div class="text-center">
-            <h1 class="mt-2 py-20 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h1 class="mt-2 py-16 text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 "Posts"
             </h1>
         </div>
@@ -36,7 +36,7 @@ pub fn Post() -> impl IntoView {
                         .format("%e %b %Y")
                         .to_string()}
                 </p>
-                <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <h1 class="mt-2 text-3xl font-bold text-white tracking-wide sm:text-4xl">
                     {post.meta.title.clone()}
                 </h1>
             </div>
