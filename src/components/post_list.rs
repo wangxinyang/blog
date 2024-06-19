@@ -36,7 +36,7 @@ fn PostItem(id: String, post: PostData) -> impl IntoView {
                             <p class="text-white text-sm font-bold">
                                 {chrono::DateTime::parse_from_rfc3339(&post.meta.date)
                                     .unwrap()
-                                    .format("%e %b %Y")
+                                    .format("%Y/%m/%d")
                                     .to_string()}
                             </p>
                             {post

@@ -1,6 +1,6 @@
 ---
 title: Leptos + tailwindcss
-cover: /images/leptos-tailwind.jpeg
+cover: /images/leptos-tailwind.webp
 date: 2024-04-10T10:59:31+08:00
 tags:
   - RUST

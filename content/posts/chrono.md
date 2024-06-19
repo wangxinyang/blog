@@ -1,6 +1,6 @@
 ---
 title: Chrono Code
-cover: /images/chrono.jpeg
+cover: /images/chrono.webp
 date: 2023-10-31T10:59:31+08:00
 tags:
   - RUST
@@ -29,24 +29,11 @@ fn main() {
     println!("local_datetime is : {}", local_datetime); // 2022-12-06 14:25:43.600005 +09:00
     println!("local_date is : {}", local_date); // 2022-12-06
 
-    // parse
-    // Err(ParseError(Invalid))
-    // "2022-12-06"  x
-    // "2022-12-6T12:00:00+0900"  x
-    // "2022-12-06T12:00:00+0900"  x
-    // "2022-12-06 12:00:00.011+09:00" or "2022-12-0612:00:00.011+09:00" x
-    // Err(ParseError(TooShort))
-    // "2022-12-06T12:00:00"  x
-    // "2022-12-06T12:00:00+09"  x
-    // Err(ParseError(TooLong))
-    // "2022-12-06T12:00:00+09:00:00" x
+    022-12-06T12:00:00+09:00:00" x
     let dt = DateTime::parse_from_rfc3339("2022-12-06T12:00:00+09:00");
     println!("after parse dt is : {:?}", dt); // Ok(2022-12-06T12:00:00+09:00)
 
-    // DateTime<FixedOffset>是和Utc时间有N个小时的差距的时间
-    // Err(ParseError(Invalid))
-    // DateTime::parse_from_str("2022/12/06 12:00:00", "yyyy/MM/dd hh:mm:ss") x
-    // DateTime::parse_from_str("2022/12/06 12:00:00 +0900", "%Y/%m/%d %H:%M:%S") x
+    ateTime::parse_from_str("2022/12/06 12:00:00 +0900", "%Y/%m/%d %H:%M:%S") x
     let dt_from_str = DateTime::parse_from_str("2022/12/06 12:00:00 +0900", "%Y/%m/%d %H:%M:%S %z");
     println!("after parse dt_from_str is : {:?}", dt_from_str); // 2022-12-06T12:00:00+09:00
 

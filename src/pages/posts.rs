@@ -33,7 +33,7 @@ pub fn Post() -> impl IntoView {
                 <p class="text-base font-semibold leading-7 text-indigo-600">
                     {chrono::DateTime::parse_from_rfc3339(&post.meta.date)
                         .unwrap()
-                        .format("%e %b %Y")
+                        .format("%Y/%m/%d")
                         .to_string()}
                 </p>
                 <h1 class="mt-2 text-3xl font-bold text-white tracking-wide sm:text-4xl">

@@ -21,6 +21,33 @@ pub struct PostMeta {
     pub summary: Option<String>,
 }
 
+pub fn get_home_page_posts() -> Option<HashMap<String, PostData>> {
+    static POST_PATH: Dir = include_dir!("$CARGO_MANIFEST_DIR/content/posts");
+
+    POST_PATH
+        .files()
+        .map(|file| {
+            let matter = Matter::<YAML>::new();
+            let result = matter.parse(file.contents_utf8()?);
+
+            let post_meta: PostMeta = result
+                .data?
+                .deserialize()
+                .expect("parse the meta data failed");
+
+            let content = result.content;
+            Some((
+                file.path().file_stem()?.to_str()?.to_string(),
+                PostData {
+                    meta: post_meta,
+                    content: markdown_to_html(content),
+                },
+            ))
+        })
+        .take(3)
+        .collect()
+}
+
 pub fn get_all_posts() -> Option<HashMap<String, PostData>> {
     static POST_PATH: Dir = include_dir!("$CARGO_MANIFEST_DIR/content/posts");
 

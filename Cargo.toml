@@ -6,6 +6,7 @@ edition = "2021"
 [lib]
 crate-type = ["cdylib", "rlib"]
 
+
 [dependencies]
 axum = { version = "0.7", optional = true }
 console_error_panic_hook = "0.1"
@@ -30,6 +31,9 @@ itertools = "0.12"
 leptos_icons = "0.3"
 icondata = "0.3"
 icondata_core = "0.1"
+
+[build-dependencies]
+image = "0.25.1"
 
 [features]
 hydrate = ["leptos/hydrate", "leptos_meta/hydrate", "leptos_router/hydrate"]

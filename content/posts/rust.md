@@ -1,6 +1,6 @@
 ---
 title: Rust Type Code
-cover: /images/rust.png
+cover: /images/rust.webp
 date: 2023-11-14T23:14:24+07:00
 tags:
   - RUST
